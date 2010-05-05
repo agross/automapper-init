@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{30FF21C5-9BC7-4C10-A804-84EBC5D127D5}</ProjectGuid>
+    <ProjectGuid>{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AutoMapper_Init.Infrastructure.Tests</RootNamespace>
-    <AssemblyName>AutoMapper-Init.Infrastructure.Tests</AssemblyName>
+    <RootNamespace>AutoMapper_Init.Views</RootNamespace>
+    <AssemblyName>AutoMapper-Init.Views</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -17,40 +17,20 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\build\Tests\</OutputPath>
+    <OutputPath>..\..\..\build\Application\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <NoWarn>169</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\build\Tests\</OutputPath>
+    <OutputPath>..\..\..\build\Application\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <NoWarn>169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper">
-      <HintPath>..\..\..\lib\AutoMapper\AutoMapper.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.Core">
-      <HintPath>..\..\..\lib\Castle\Castle.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.MicroKernel">
-      <HintPath>..\..\..\lib\Castle\Castle.MicroKernel.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.Windsor">
-      <HintPath>..\..\..\lib\Castle\Castle.Windsor.dll</HintPath>
-    </Reference>
-    <Reference Include="Machine.Specifications">
-      <HintPath>..\..\..\tools\Machine.Specifications\Machine.Specifications.dll</HintPath>
-    </Reference>
-    <Reference Include="Rhino.Mocks">
-      <HintPath>..\..\..\tools\Rhino Mocks\Rhino.Mocks.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
@@ -61,16 +41,11 @@
     <Compile Include="..\..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
-    <Compile Include="AutoMapperIntegration\AutoMapperInitializerSpecs.cs" />
-    <Compile Include="AutoMapperIntegration\AutoMapperServicesInstallerSpecs.cs" />
-    <Compile Include="BootstrapperSpecs.cs" />
+    <Compile Include="ProjectView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\app\AutoMapper-Init.Infrastructure\AutoMapper-Init.Infrastructure.csproj">
-      <Project>{89A69168-AC27-43F7-9935-EEAEE2E2A442}</Project>
-      <Name>AutoMapper-Init.Infrastructure</Name>
-    </ProjectReference>
+    <Folder Include="Mapper\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

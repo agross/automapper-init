@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\lib\AutoMapper\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.Core">
       <HintPath>..\..\..\lib\Castle\Castle.Core.dll</HintPath>
     </Reference>
@@ -53,11 +56,15 @@
     <Compile Include="..\..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
+    <Compile Include="AutoMapperIntegration\AutoMapperInitializer.cs" />
+    <Compile Include="AutoMapperIntegration\AutoMapperServicesInstaller.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="AutoMapperIntegration\IMapper.cs" />
     <Compile Include="IRequireConfigurationOnStartup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

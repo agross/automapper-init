@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper-Init.Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper-Init.Infrastructure.Tests", "test\AutoMapper-Init.Infrastructure.Tests\AutoMapper-Init.Infrastructure.Tests.csproj", "{30FF21C5-9BC7-4C10-A804-84EBC5D127D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper-Init.Views", "app\AutoMapper-Init.Views\AutoMapper-Init.Views.csproj", "{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,16 @@ Global
 		{30FF21C5-9BC7-4C10-A804-84EBC5D127D5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{30FF21C5-9BC7-4C10-A804-84EBC5D127D5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{30FF21C5-9BC7-4C10-A804-84EBC5D127D5}.Release|x86.ActiveCfg = Release|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +83,7 @@ Global
 		{52415F16-322F-457C-AF41-45FADB8C7078} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
 		{85E93134-C5E6-4C38-B1F6-06018FF075DB} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
 		{89A69168-AC27-43F7-9935-EEAEE2E2A442} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
+		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
 		{30FF21C5-9BC7-4C10-A804-84EBC5D127D5} = {F6D4289B-8170-4754-87AA-CE2F01013650}
 	EndGlobalSection
 EndGlobal
