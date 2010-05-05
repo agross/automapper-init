@@ -1,0 +1,19 @@
+<%= optional_yaml('local-properties') %>
+
+global:
+  project: AutoMappper-Init
+  dir:
+    build: build
+    test_results: build/test-results
+    source: source
+    app: source/app
+    test: source/test
+  build:
+    configuration: Debug
+    number: <%= ENV['BUILD_NUMBER'] %>
+    commit_sha: <%= ENV['BUILD_VCS_NUMBER'] || "no SHA" %>
+  tools:
+    mspec: tools/Machine.Specifications/mspec.exe
+
+development:
+  default_to: global
