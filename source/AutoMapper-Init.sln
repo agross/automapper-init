@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper-Init.Views", "ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper-Init.Views.Tests", "test\AutoMapper-Init.Views.Tests\AutoMapper-Init.Views.Tests.csproj", "{F6A7BFFA-0372-4B7F-B565-AE6C584846F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper-Init.Application", "app\AutoMapper-Init.Application\AutoMapper-Init.Application.csproj", "{C498172E-C09C-4298-88BC-460BDA2938C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,16 @@ Global
 		{F6A7BFFA-0372-4B7F-B565-AE6C584846F0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{F6A7BFFA-0372-4B7F-B565-AE6C584846F0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F6A7BFFA-0372-4B7F-B565-AE6C584846F0}.Release|x86.ActiveCfg = Release|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C498172E-C09C-4298-88BC-460BDA2938C6}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +108,7 @@ Global
 		{85E93134-C5E6-4C38-B1F6-06018FF075DB} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
 		{89A69168-AC27-43F7-9935-EEAEE2E2A442} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
 		{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
+		{C498172E-C09C-4298-88BC-460BDA2938C6} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
 		{30FF21C5-9BC7-4C10-A804-84EBC5D127D5} = {F6D4289B-8170-4754-87AA-CE2F01013650}
 		{F6A7BFFA-0372-4B7F-B565-AE6C584846F0} = {F6D4289B-8170-4754-87AA-CE2F01013650}
 	EndGlobalSection
