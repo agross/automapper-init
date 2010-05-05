@@ -41,6 +41,7 @@
     <Compile Include="..\..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
+    <Compile Include="IClock.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Role.cs" />
     <Compile Include="User.cs" />

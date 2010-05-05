@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}</ProjectGuid>
+    <ProjectGuid>{F6A7BFFA-0372-4B7F-B565-AE6C584846F0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AutoMapper_Init.Views</RootNamespace>
-    <AssemblyName>AutoMapper-Init.Views</AssemblyName>
+    <RootNamespace>AutoMapper_Init.Views.Tests</RootNamespace>
+    <AssemblyName>AutoMapper-Init.Views.Tests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -17,21 +17,31 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\build\Application\</OutputPath>
+    <OutputPath>..\..\..\build\Tests\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoWarn>169</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\build\Application\</OutputPath>
+    <OutputPath>..\..\..\build\Tests\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoWarn>169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoMapper, Version=1.0.0.155, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL" />
+    <Reference Include="Castle.Core, Version=1.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.MicroKernel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Castle\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Machine.Specifications, Version=0.3.0.0, Culture=neutral, PublicKeyToken=5c474de7a495cff1, processorArchitecture=MSIL" />
+    <Reference Include="Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
@@ -42,24 +52,23 @@
     <Compile Include="..\..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
-    <Compile Include="Mapping\Formatter\EnglishDateFormatter.cs" />
-    <Compile Include="Mapping\ProjectToProjectSummary.cs" />
-    <Compile Include="Mapping\ProjectToRolesInProject.cs" />
-    <Compile Include="Mapping\Resolver\CurrentDateTimeResolver.cs" />
-    <Compile Include="Mapping\UserToRoles.cs" />
-    <Compile Include="ProjectSummary.cs" />
+    <Compile Include="AutoMapperCleanup.cs" />
+    <Compile Include="Mapping\ProjectToRolesInProjectSpecs.cs" />
+    <Compile Include="Mapping\ProjectToProjectSummarySpecs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RolesInProject.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\AutoMapper-Init.Domain\AutoMapper-Init.Domain.csproj">
+    <ProjectReference Include="..\..\app\AutoMapper-Init.Domain\AutoMapper-Init.Domain.csproj">
       <Project>{85E93134-C5E6-4C38-B1F6-06018FF075DB}</Project>
       <Name>AutoMapper-Init.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AutoMapper-Init.Infrastructure\AutoMapper-Init.Infrastructure.csproj">
+    <ProjectReference Include="..\..\app\AutoMapper-Init.Infrastructure\AutoMapper-Init.Infrastructure.csproj">
       <Project>{89A69168-AC27-43F7-9935-EEAEE2E2A442}</Project>
       <Name>AutoMapper-Init.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\app\AutoMapper-Init.Views\AutoMapper-Init.Views.csproj">
+      <Project>{D1BACA19-E6F4-42CC-9A7E-EA4CCF16107B}</Project>
+      <Name>AutoMapper-Init.Views</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -29,9 +29,9 @@ namespace AutoMapper_Init.Infrastructure.AutoMapperIntegration
 				.LifeStyle.Singleton
 				.ImplementedBy<MappingEngine>();
 
-			yield return Component.For<AutoMapper.Configuration>()
+			yield return Component.For<Configuration>()
 				.LifeStyle.Singleton
-				.UsingFactoryMethod(() => new AutoMapper.Configuration(new TypeMapFactory(), MapperRegistry.AllMappers()))
+				.UsingFactoryMethod(() => new Configuration(new TypeMapFactory(), MapperRegistry.AllMappers()))
 				.Forward<IConfigurationProvider>()
 				.Forward<IConfiguration>();
 		}

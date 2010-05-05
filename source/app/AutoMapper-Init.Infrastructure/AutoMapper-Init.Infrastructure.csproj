@@ -63,8 +63,14 @@
     <Compile Include="AutoMapperIntegration\IMapper.cs" />
     <Compile Include="IRequireConfigurationOnStartup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemClock.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AutoMapper-Init.Domain\AutoMapper-Init.Domain.csproj">
+      <Project>{85E93134-C5E6-4C38-B1F6-06018FF075DB}</Project>
+      <Name>AutoMapper-Init.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
