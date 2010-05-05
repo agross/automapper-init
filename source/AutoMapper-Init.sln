@@ -3,18 +3,48 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper-Init.Console", "app\AutoMapper-Init.Console\AutoMapper-Init.Console.csproj", "{52415F16-322F-457C-AF41-45FADB8C7078}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapper-Init.Domain", "app\AutoMapper-Init.Domain\AutoMapper-Init.Domain.csproj", "{85E93134-C5E6-4C38-B1F6-06018FF075DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{0580BA8E-7524-401B-96F5-63B0AE3711F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{F6D4289B-8170-4754-87AA-CE2F01013650}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52415F16-322F-457C-AF41-45FADB8C7078}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{52415F16-322F-457C-AF41-45FADB8C7078}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{52415F16-322F-457C-AF41-45FADB8C7078}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{52415F16-322F-457C-AF41-45FADB8C7078}.Debug|x86.ActiveCfg = Debug|x86
 		{52415F16-322F-457C-AF41-45FADB8C7078}.Debug|x86.Build.0 = Debug|x86
+		{52415F16-322F-457C-AF41-45FADB8C7078}.Release|Any CPU.ActiveCfg = Release|x86
+		{52415F16-322F-457C-AF41-45FADB8C7078}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{52415F16-322F-457C-AF41-45FADB8C7078}.Release|Mixed Platforms.Build.0 = Release|x86
 		{52415F16-322F-457C-AF41-45FADB8C7078}.Release|x86.ActiveCfg = Release|x86
 		{52415F16-322F-457C-AF41-45FADB8C7078}.Release|x86.Build.0 = Release|x86
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52415F16-322F-457C-AF41-45FADB8C7078} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
+		{85E93134-C5E6-4C38-B1F6-06018FF075DB} = {0580BA8E-7524-401B-96F5-63B0AE3711F5}
 	EndGlobalSection
 EndGlobal

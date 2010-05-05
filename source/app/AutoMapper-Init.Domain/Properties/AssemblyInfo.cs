@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("AutoMapper-Init.Console")]
+[assembly: AssemblyTitle("AutoMapper-Init.Domain")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -18,4 +18,4 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("f5de47ec-4b71-414e-a082-2595f679db60")]
+[assembly: Guid("b155dfc1-11f0-4dbb-af02-46e6134af465")]
